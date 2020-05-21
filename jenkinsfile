@@ -5,25 +5,25 @@ pipeline {
         stage('Compile') {
             steps {
                 echo "Compiling the Code.........."
-                bat "mvn compile"
+         /*       bat "mvn compile"     */
             }
         }
         stage('Testing') {
             steps {
                 echo "Testing the Code.........."
-                bat "mvn test"
+           /*     bat "mvn test"        */
             }
         }
         stage('Packaging') {
             steps {
                 echo "Packaging the Code.........."
-                bat "mvn package" 
+             /*    bat "mvn package"        */
             }
         }
        stage('Install') {
             steps {
                 echo "Installing the Code.........."
-                bat "mvn install" 
+             /*    bat "mvn install"        */
             }
         }
     }
